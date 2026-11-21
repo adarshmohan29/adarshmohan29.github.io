@@ -73,6 +73,16 @@ Python · PyTorch · OpenVLA · LIBERO · Hydra · Weights & Biases · Slurm · 
     category: "Backend",
   },
   {
+    repo: "Gatekeeper",
+    title: "Gatekeeper",
+    tagline:
+      "Real-time DDoS detection and automated mitigation: scores every traffic source each second, then rate-limits and blocks flooding sources in nftables while legitimate clients keep working.",
+    highlights: ["Attacker rate-limited within 5 s; 0 failed normal requests in demo", "Chaos-tested on Kubernetes: mitigation within 20 s under component failure"],
+    tech: ["Python", "Kafka / Redpanda", "Redis", "ONNX", "nftables", "Kubernetes"],
+    category: "Security · Systems",
+    hideSections: ["More"],
+  },
+  {
     repo: "Cloud-Dock",
     title: "CloudDock",
     tagline:
@@ -102,15 +112,5 @@ Image classification project using **PyTorch transfer learning** on the **DeFung
 Python · PyTorch · torchvision · Jupyter Notebook
 
 The full notebook and data pipeline are in the \`Final_Project\` folder of the repository.`,
-  },
-  {
-    repo: "Gatekeeper",
-    title: "Gatekeeper",
-    tagline:
-      "Real-time DDoS detection and automated mitigation: scores every traffic source each second, then rate-limits and blocks flooding sources in nftables while legitimate clients keep working.",
-    highlights: ["Attacker rate-limited within 5 s; 0 failed normal requests in demo", "Chaos-tested on Kubernetes: mitigation within 20 s under component failure"],
-    tech: ["Python", "Kafka / Redpanda", "Redis", "ONNX", "nftables", "Kubernetes"],
-    category: "Security · Systems",
-    hideSections: ["More"],
   },
 ];
