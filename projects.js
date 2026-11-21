@@ -11,7 +11,7 @@ const GITHUB_USER = "adarshmohan29";
 const PROJECTS = [
   {
     repo: "Safe-Research",
-    title: "SAFE Research — VLA Failure Detection",
+    title: "Adaptive Multi-Layer Feature Fusion for Multitask Failure Detection in VLA Models",
     tagline:
       "Research extending SAFE (NeurIPS '25) to predict when vision-language-action robot policies are about to fail, using features fused from multiple model layers.",
     highlights: ["Multi-layer feature fusion detectors on OpenVLA", "Zero-shot failure detection on unseen LIBERO tasks"],
