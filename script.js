@@ -23,9 +23,8 @@
 
   /* ---------- Project cards ---------- */
   const ghIcon = `<svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M12 .5a11.5 11.5 0 0 0-3.6 22.4c.6.1.8-.3.8-.6v-2c-3.2.7-3.9-1.5-3.9-1.5-.5-1.3-1.3-1.7-1.3-1.7-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.3 1.2a11.4 11.4 0 0 1 6 0C17.6 4.4 18.6 4.7 18.6 4.7c.6 1.6.2 2.8.1 3.1.8.8 1.2 1.9 1.2 3.1 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A11.5 11.5 0 0 0 12 .5z"/></svg>`;
-  const renderCards = (grid, list) => {
-  if (!grid) return;
-  grid.innerHTML = list.map(
+  const grid = $("#projectsGrid");
+  grid.innerHTML = PROJECTS.map(
     (p, i) => `
     <div class="project-card reveal" role="button" tabindex="0" data-index="${i}" aria-label="Open README for ${esc(p.title)}">
       <div class="pc-top">
@@ -48,7 +47,7 @@
   $$(".project-card", grid).forEach((card) => {
     const open = (e) => {
       if (e.target.closest(".pc-gh")) return; // let the GitHub icon open GitHub
-      openProject(list[+card.dataset.index], card);
+      openProject(PROJECTS[+card.dataset.index], card);
     };
     card.addEventListener("click", open);
     card.addEventListener("keydown", (e) => {
@@ -60,9 +59,6 @@
       card.style.setProperty("--my", `${e.clientY - r.top}px`);
     });
   });
-  };
-  renderCards($("#projectsGrid"), PROJECTS);
-  renderCards($("#researchGrid"), typeof RESEARCH_PROJECTS !== "undefined" ? RESEARCH_PROJECTS : []);
 
   /* ---------- README modal ---------- */
   const modal = $("#modal");
@@ -175,7 +171,7 @@
   // Deep link: /#project/TriageMesh opens that README directly
   const m = location.hash.match(/^#project\/(.+)$/);
   if (m) {
-    const p = [...PROJECTS, ...(typeof RESEARCH_PROJECTS !== "undefined" ? RESEARCH_PROJECTS : [])].find((x) => x.repo === decodeURIComponent(m[1]));
+    const p = PROJECTS.find((x) => x.repo === decodeURIComponent(m[1]));
     if (p) setTimeout(() => openProject(p), 300);
   }
 
