@@ -1,0 +1,6 @@
+# original full-resolution photo (may contain location metadata)
+image/
+.DS_Store
+# resume is kept on this Mac only, never uploaded
+resume.pdf
+*.pdf

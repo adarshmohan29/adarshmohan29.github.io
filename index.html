@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Adarsh Mohankumar Gundagal · Software Engineer</title>
+  <meta name="description" content="Adarsh Mohankumar Gundagal: MS CS at USC. Backend engineering, distributed systems and AI infrastructure." />
+  <meta property="og:title" content="Adarsh Mohankumar Gundagal" />
+  <meta property="og:description" content="Backend engineering, distributed systems and AI infrastructure." />
+  <meta property="og:image" content="assets/photo.jpg" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%23f5a524'/><text x='50' y='67' font-size='52' font-family='monospace' font-weight='700' text-anchor='middle' fill='%230b0f17'>AG</text></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@11.9.0/styles/github-dark.min.css" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="bg-grid" aria-hidden="true"></div>
+
+  <!-- Top bar -->
+  <header class="topbar">
+    <a href="#home" class="logo"><span class="logo-mark">AG</span><span class="logo-text">adarsh.dev</span></a>
+    <nav class="nav" id="nav">
+      <a href="#home" data-section="home">Home</a>
+      <a href="#experience" data-section="experience">Experience</a>
+      <a href="#projects" data-section="projects">Projects</a>
+      <a href="#skills" data-section="skills">Skills</a>
+      <a href="#research" data-section="research">Research</a>
+      <a href="#education" data-section="education">Education</a>
+    </nav>
+    <div class="topbar-actions">
+      <button class="icon-btn" id="themeToggle" aria-label="Toggle light/dark theme" title="Toggle theme">
+        <svg class="sun" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+        <svg class="moon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+      </button>
+      <button class="icon-btn menu-btn" id="menuBtn" aria-label="Open menu">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section id="home" class="hero">
+      <div class="hero-text reveal">
+        <p class="eyebrow"><span class="dot"></span> MS CS @ USC · Open to SWE internships &amp; new-grad roles</p>
+        <h1>Hi, I'm <span class="grad">Adarsh</span>.<br />I build backend systems that <span class="underline">hold up under load</span>.</h1>
+        <p class="lead">
+          Software engineer focused on <strong>distributed systems</strong>, <strong>LLM inference</strong> and
+          <strong>AI agents</strong>. Currently a <strong>Graduate Teaching Assistant at USC</strong>; previously at <strong>ISRO</strong>, <strong>Pegasystems</strong> and
+          <strong>Tumkur Smart City</strong>. Curious by default; shipping what I learn.
+        </p>
+        <div class="hero-meta">
+          <span><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-6.3-7-12a7 7 0 0 1 14 0c0 5.7-7 12-7 12z"/><circle cx="12" cy="9" r="2.5"/></svg>Los Angeles, CA</span>
+          <span><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10 12 5 2 10l10 5 10-5z"/><path d="M6 12v5c3 2 9 2 12 0v-5"/></svg>USC · GPA 3.68</span>
+        </div>
+        <div class="cta">
+          <a class="btn primary" href="mailto:adarshmohankumar.gundagal@gmail.com">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>Email me</a>
+          <a class="btn icon-only" href="https://github.com/adarshmohan29" target="_blank" rel="noopener" aria-label="GitHub">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M12 .5a11.5 11.5 0 0 0-3.6 22.4c.6.1.8-.3.8-.6v-2c-3.2.7-3.9-1.5-3.9-1.5-.5-1.3-1.3-1.7-1.3-1.7-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.3 1.2a11.4 11.4 0 0 1 6 0C17.6 4.4 18.6 4.7 18.6 4.7c.6 1.6.2 2.8.1 3.1.8.8 1.2 1.9 1.2 3.1 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A11.5 11.5 0 0 0 12 .5z"/></svg></a>
+          <a class="btn icon-only" href="https://linkedin.com/in/adarshmohan29/" target="_blank" rel="noopener" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M20.4 20.5h-3.6v-5.6c0-1.3 0-3-1.8-3s-2.1 1.4-2.1 2.9v5.7H9.3V9h3.4v1.6h.1c.5-.9 1.6-1.8 3.4-1.8 3.6 0 4.3 2.4 4.3 5.5v6.2zM5.3 7.4a2.1 2.1 0 1 1 0-4.2 2.1 2.1 0 0 1 0 4.2zM7.1 20.5H3.5V9h3.6v11.5zM22.2 0H1.8C.8 0 0 .8 0 1.7v20.6c0 .9.8 1.7 1.8 1.7h20.4c1 0 1.8-.8 1.8-1.7V1.7C24 .8 23.2 0 22.2 0z"/></svg></a>
+        </div>
+      </div>
+
+      <div class="hero-photo reveal">
+        <div class="photo-frame">
+          <img src="assets/photo.jpg" alt="Adarsh Mohankumar Gundagal at the Hollywood Hills, Los Angeles" width="650" height="810" />
+        </div>
+        <div class="photo-tag"><span class="pulse"></span>Hollywood Hills, LA</div>
+        <div class="hobby h1">🥾 Trekking</div>
+        <div class="hobby h2">✈️ Travelling</div>
+        <div class="hobby h3">🏸 Badminton</div>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section id="experience" class="section">
+      <div class="section-head reveal">
+        <span class="kicker">01 · Experience</span>
+        <h2>Where I've worked</h2>
+      </div>
+      <div class="timeline">
+        <article class="job reveal current">
+          <div class="job-dot"></div>
+          <div class="job-card">
+            <header>
+              <div>
+                <h3>Graduate Teaching Assistant <span class="badge">Current</span></h3>
+                <p class="org">University of Southern California</p>
+              </div>
+              <span class="date">Jul 2026 – Present</span>
+            </header>
+          </div>
+        </article>
+
+        <article class="job reveal current">
+          <div class="job-dot"></div>
+          <div class="job-card">
+            <header>
+              <div>
+                <h3>Thesis Evaluator <span class="badge">Current</span></h3>
+                <p class="org">USC Marshall School of Business</p>
+              </div>
+              <span class="date">Jul 2026 – Present</span>
+            </header>
+          </div>
+        </article>
+
+        <article class="job reveal">
+          <div class="job-dot"></div>
+          <div class="job-card">
+            <header>
+              <div>
+                <h3>Software Development Intern</h3>
+                <p class="org">Tumkur Smart City Limited</p>
+              </div>
+              <span class="date">Oct 2024 – Mar 2025</span>
+            </header>
+            <ul>
+              <li>Built caching and microservice layers (Redis, CDN, service-worker caching) that cut frontend latency by <b>75%</b> with <b>85%+</b> cache-hit rates.</li>
+              <li>Architected Micro Frontends with Webpack Module Federation, shipping a traffic-management dashboard as an independently deployed module and cutting payload size by <b>40%</b>.</li>
+              <li>Added CI/CD pipelines and idempotent APIs, reducing failures by <b>60%</b>; raised test coverage from <b>45% → 75%</b> and cut post-release bugs by <b>40%</b>.</li>
+            </ul>
+            <div class="chips"><span>Redis</span><span>Microservices</span><span>Webpack MFE</span><span>CI/CD</span></div>
+          </div>
+        </article>
+
+        <article class="job reveal">
+          <div class="job-dot"></div>
+          <div class="job-card">
+            <header>
+              <div>
+                <h3>Associate System Architect Intern</h3>
+                <p class="org">Pegasystems</p>
+              </div>
+              <span class="date">Feb 2024 – Apr 2024</span>
+            </header>
+            <ul>
+              <li>Built and configured Pega applications across the SDLC using Case Types, Data Pages and Decision Rules to automate real business processes.</li>
+              <li>Used AI coding assistants (Claude Code, Copilot) to build features and generate tests, reviewing all output for correctness and security.</li>
+              <li>Built and tested SOAP and REST integrations with external systems under Git-based version control.</li>
+            </ul>
+            <div class="chips"><span>Pega</span><span>REST</span><span>SOAP</span><span>Git</span></div>
+          </div>
+        </article>
+
+        <article class="job reveal">
+          <div class="job-dot"></div>
+          <div class="job-card">
+            <header>
+              <div>
+                <h3>Software Development Project Intern</h3>
+                <p class="org">Indian Space Research Organisation (ISRO)</p>
+              </div>
+              <span class="date">Jul 2023 – Nov 2023</span>
+            </header>
+            <ul>
+              <li>Engineered a full-stack web app to emulate and remotely monitor and control ground-station equipment for Telemetry, Tracking &amp; Command operations.</li>
+              <li>Delivered real-time data acquisition, live visualization and role-based access control with <b>&lt;1s</b> monitoring updates and fault-tolerant multi-user control.</li>
+              <li>Built modular GUIs and streamlined session scheduling and equipment configuration; tested and deployed across distributed environments.</li>
+            </ul>
+            <div class="chips"><span>Full-stack</span><span>Real-time</span><span>RBAC</span><span>Distributed</span></div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="section">
+      <div class="section-head reveal">
+        <span class="kicker">02 · Projects</span>
+        <h2>Things I've built</h2>
+        <p class="sub">Click a project to read its README right here, or jump to the code on GitHub.</p>
+      </div>
+      <div class="projects-grid" id="projectsGrid"></div>
+      <div class="more reveal">
+        <a href="https://github.com/adarshmohan29?tab=repositories" target="_blank" rel="noopener" class="link-arrow">See everything on GitHub →</a>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="section">
+      <div class="section-head reveal">
+        <span class="kicker">03 · Skills</span>
+        <h2>What I work with</h2>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-card reveal">
+          <h3><span class="ico">{ }</span>Languages</h3>
+          <div class="chips big"><span>C</span><span>C++</span><span>Python</span><span>Go</span><span>Java</span><span>JavaScript</span><span>TypeScript</span><span>SQL</span></div>
+        </div>
+        <div class="skill-card reveal">
+          <h3><span class="ico">⚙</span>Backend &amp; Cloud</h3>
+          <div class="chips big"><span>Node.js</span><span>Express</span><span>Spring Boot</span><span>Kafka</span><span>Postgres</span><span>MongoDB</span><span>Redis</span><span>Docker</span><span>AWS</span><span>Git</span></div>
+        </div>
+        <div class="skill-card reveal">
+          <h3><span class="ico">◈</span>AI / ML</h3>
+          <div class="chips big"><span>PyTorch</span><span>llama.cpp</span><span>LLM Agents</span><span>MCP</span><span>Deep Learning</span><span>NLP</span></div>
+        </div>
+        <div class="skill-card reveal">
+          <h3><span class="ico">▣</span>Frontend</h3>
+          <div class="chips big"><span>React.js</span><span>Redux</span><span>Webpack Module Federation</span></div>
+        </div>
+        <div class="skill-card wide reveal">
+          <h3><span class="ico">∑</span>Foundations</h3>
+          <div class="chips big"><span>Distributed Systems</span><span>Operating Systems</span><span>Database Systems</span><span>Data Structures</span><span>Algorithms</span><span>Machine Learning</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Research -->
+    <section id="research" class="section">
+      <div class="section-head reveal">
+        <span class="kicker">04 · Research</span>
+        <h2>Publications</h2>
+      </div>
+      <div class="pubs">
+        <a class="pub reveal" href="https://ieeexplore.ieee.org/document/10560194" target="_blank" rel="noopener">
+          <span class="pub-venue">IEEE · ICAECC 2023</span>
+          <h3>Double Reinforcement Learning Based Interactive GAN for Detection of Volumetric Attacks in Cloud Computing</h3>
+          <p><b>Adarsh M. G.</b>, Bhargavi K. · IEEE 5th International Conference on Advances in Electronics, Computers and Communications</p>
+          <span class="pub-link">Read on IEEE Xplore ↗</span>
+        </a>
+        <a class="pub reveal" href="https://journalcrd.org/wp-content/uploads/2-CRD2373.pdf" target="_blank" rel="noopener">
+          <span class="pub-venue">Computer Research and Development · 2024</span>
+          <h3>Efficient Resource Allocation in Cloud Computing Using Federated Heterogeneous 2Q Learning</h3>
+          <p>Bhargavi K., <b>Adarsh M. G.</b> · Vol. 24, No. 9, pp. 7–15</p>
+          <span class="pub-link">Read the paper (PDF) ↗</span>
+        </a>
+        <a class="pub reveal" href="https://journalcrd.org/wp-content/uploads/12-CRD2388.pdf" target="_blank" rel="noopener">
+          <span class="pub-venue">Computer Research and Development · 2024</span>
+          <h3>Cloud Malware Attack Detection Framework using Water Reinforcement Learning</h3>
+          <p>Bhargavi K., <b>Adarsh M. G.</b> · Vol. 24</p>
+          <span class="pub-link">Read the paper (PDF) ↗</span>
+        </a>
+
+      </div>
+    </section>
+
+    <!-- Education -->
+    <section id="education" class="section">
+      <div class="section-head reveal">
+        <span class="kicker">05 · Education</span>
+        <h2>Academic background</h2>
+      </div>
+      <div class="edu-grid">
+        <article class="edu reveal">
+          <div class="edu-top">
+            <div class="edu-badge usc">USC</div>
+            <span class="date">Aug 2025 – May 2027 (expected)</span>
+          </div>
+          <h3>University of Southern California</h3>
+          <p>Master of Science in Computer Science</p>
+          <div class="gpa"><span>GPA</span><b>3.68</b><small>/ 4.0</small></div>
+        </article>
+        <article class="edu reveal">
+          <div class="edu-top">
+            <div class="edu-badge sit">SIT</div>
+            <span class="date">Dec 2020 – Jul 2024</span>
+          </div>
+          <h3>Siddaganga Institute of Technology, Tumkur</h3>
+          <p>Bachelor of Engineering in Computer Science &amp; Engineering</p>
+          <div class="gpa"><span>CGPA</span><b>9.13</b><small>/ 10.0</small></div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="contact reveal">
+      <h2>Let's build something.</h2>
+      <p>I'm looking for software engineering roles in backend, infrastructure and AI systems. My inbox is always open.</p>
+      <a class="btn primary big" href="mailto:adarshmohankumar.gundagal@gmail.com">adarshmohankumar.gundagal@gmail.com</a>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <span>© <span id="year"></span> Adarsh Mohankumar Gundagal</span>
+    <div class="footer-links">
+      <a href="mailto:adarshmohankumar.gundagal@gmail.com">Email</a>
+      <a href="https://github.com/adarshmohan29" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://linkedin.com/in/adarshmohan29/" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+  </footer>
+
+  <!-- README modal -->
+  <div class="modal" id="modal" aria-hidden="true">
+    <div class="modal-backdrop" data-close></div>
+    <div class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <div class="modal-head">
+        <div>
+          <span class="modal-kicker">README.md</span>
+          <h3 id="modalTitle">Project</h3>
+        </div>
+        <div class="modal-actions">
+          <a class="btn primary sm" id="modalGithub" href="#" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M12 .5a11.5 11.5 0 0 0-3.6 22.4c.6.1.8-.3.8-.6v-2c-3.2.7-3.9-1.5-3.9-1.5-.5-1.3-1.3-1.7-1.3-1.7-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.3 1.2a11.4 11.4 0 0 1 6 0C17.6 4.4 18.6 4.7 18.6 4.7c.6 1.6.2 2.8.1 3.1.8.8 1.2 1.9 1.2 3.1 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A11.5 11.5 0 0 0 12 .5z"/></svg>
+            View on GitHub</a>
+          <button class="icon-btn" data-close aria-label="Close">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 6l12 12M18 6 6 18"/></svg>
+          </button>
+        </div>
+      </div>
+      <div class="modal-body">
+        <article class="markdown" id="modalContent"></article>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/marked@12.0.2/marked.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/dompurify@3.1.6/dist/purify.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/highlight.js@11.9.0/lib/highlight.min.js"></script>
+  <script src="projects.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
