@@ -10,6 +10,41 @@ const GITHUB_USER = "adarshmohan29";
 
 const PROJECTS = [
   {
+    repo: "Safe-Research",
+    title: "SAFE Research — VLA Failure Detection",
+    tagline:
+      "Research extending SAFE (NeurIPS '25) to predict when vision-language-action robot policies are about to fail, using features fused from multiple model layers.",
+    highlights: ["Multi-layer feature fusion detectors on OpenVLA", "Zero-shot failure detection on unseen LIBERO tasks"],
+    tech: ["Python", "PyTorch", "OpenVLA", "LIBERO", "Slurm / Modal"],
+    category: "Research · Robotics ML",
+    status: "In progress",
+    localReadme: `# SAFE Research: Failure Detection for Vision-Language-Action Models
+
+*Ongoing team research project.*
+
+## The problem
+Vision-Language-Action (VLA) models such as **OpenVLA** let a robot follow natural-language instructions ("put the bowl in the drawer") directly from camera images. But when they fail, they usually fail silently: the robot keeps moving with no sign that anything is wrong. For real deployment we need a **failure detector** that warns early that a rollout is going wrong, including on **tasks it has never seen before**.
+
+## Background
+This work builds on **SAFE: Multitask Failure Detection for Vision-Language-Action Models** (Gu et al., NeurIPS 2025, [project page](https://vla-safe.github.io/)). SAFE showed that the VLA's own internal features carry a general "this is going to fail" signal, and trained a lightweight detector on them that transfers zero-shot to unseen tasks. The original SAFE code is kept intact in the repository and credited to its authors.
+
+## What we're building
+Our research asks whether failure signals are spread across **different depths of the model**, and whether combining them beats SAFE's single-layer approach.
+
+- **Multi-layer feature extraction:** a patched OpenVLA captures hidden states from several transformer layers (e.g. layers 8, 16, 24 and 32) during each rollout.
+- **Versioned feature store:** features are cached once, with metadata (checkpoint, layers, pooling, dtype, split version), so detectors train quickly without reloading the 7B model.
+- **Fusion detectors:** a registry of models compared side by side, including gated fusion, residual fusion, concat fusion, single-layer probes, and the original SAFE MLP/LSTM baselines.
+- **Layer probing** to measure which depths carry the most failure signal.
+- **Strict evaluation protocol:** all tuning uses held-out *seen* tasks; *unseen* tasks are used only for the final evaluation (ROC-AUC, PR-AUC, TPR at fixed FPR).
+- **Reproducible GPU pipeline:** LIBERO simulation rollouts run on Modal (A10) and USC's CARC cluster (Slurm), with environment fingerprints and checksums. Every run is tracked in an experiment index.
+
+## Status
+In progress. The rollout collection and feature-caching pipeline is built and tested, and the first experiment (adaptive gated fusion on LIBERO-10) is set up. Results are still to come.
+
+## Stack
+Python · PyTorch · OpenVLA · LIBERO · Hydra · Weights & Biases · Slurm · Modal`,
+  },
+  {
     repo: "batchstream-inference-engine",
     title: "BatchStream Inference Engine",
     tagline:
