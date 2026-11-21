@@ -5,6 +5,7 @@
  *   readmePath – optional: path to the README if it isn't at the repo root
  *   localReadme – optional: markdown shown instead of fetching from GitHub
  *   status     – optional: "In progress" etc. (shows a badge)
+ *   hideSections – optional: README section headings to leave out of the popup
  */
 const GITHUB_USER = "adarshmohan29";
 
@@ -102,13 +103,14 @@ Python · PyTorch · torchvision · Jupyter Notebook
 
 The full notebook and data pipeline are in the \`Final_Project\` folder of the repository.`,
   },
-  // {
-  //   repo: "Gatekeeper",
-  //   title: "Gatekeeper",
-  //   tagline: "…",
-  //   highlights: [],
-  //   tech: [],
-  //   category: "…",
-  //   status: "In progress",
-  // },
+  {
+    repo: "Gatekeeper",
+    title: "Gatekeeper",
+    tagline:
+      "Real-time DDoS detection and automated mitigation: scores every traffic source each second, then rate-limits and blocks flooding sources in nftables while legitimate clients keep working.",
+    highlights: ["Attacker rate-limited within 5 s; 0 failed normal requests in demo", "Chaos-tested on Kubernetes: mitigation within 20 s under component failure"],
+    tech: ["Python", "Kafka / Redpanda", "Redis", "ONNX", "nftables", "Kubernetes"],
+    category: "Security · Systems",
+    hideSections: ["More"],
+  },
 ];

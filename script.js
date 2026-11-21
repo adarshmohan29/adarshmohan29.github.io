@@ -118,7 +118,26 @@
     });
   }
 
+  // Drop README sections listed in p.hideSections (heading text, any level) from the popup.
+  function stripSections(md, names) {
+    if (!names || !names.length) return md;
+    const want = names.map((n) => n.toLowerCase());
+    const out = [];
+    let skipLevel = 0;
+    for (const line of md.split("\n")) {
+      const m = /^(#{1,6})\s+(.*?)\s*#*\s*$/.exec(line);
+      if (m) {
+        const level = m[1].length;
+        if (skipLevel && level <= skipLevel) skipLevel = 0;
+        if (!skipLevel && want.includes(m[2].toLowerCase())) { skipLevel = level; continue; }
+      }
+      if (!skipLevel) out.push(line);
+    }
+    return out.join("\n");
+  }
+
   function render(md, p) {
+    md = stripSections(md, p.hideSections);
     const html = DOMPurify.sanitize(marked.parse(md, { gfm: true }), { ADD_ATTR: ["target", "align"] });
     content.innerHTML = html;
     fixUrls(content, p);
