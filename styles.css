@@ -371,3 +371,7 @@ body.modal-open { overflow: hidden; }
 .job.current .job-card header { margin-bottom: 0; }
 .job.current .job-dot { background: var(--accent); box-shadow: 0 0 0 5px var(--accent-soft); }
 .job-card h3 .badge { margin-left: 8px; vertical-align: middle; font-weight: 500; }
+
+/* Research section: ongoing research cards + publications */
+.research-sub { font-size: 15px; font-family: var(--mono); font-weight: 500; color: var(--muted); letter-spacing: 0.04em; text-transform: uppercase; margin: 8px 0 16px; }
+.research-grid { grid-template-columns: 1fr; margin-bottom: 36px; }

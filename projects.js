@@ -8,7 +8,8 @@
  */
 const GITHUB_USER = "adarshmohan29";
 
-const PROJECTS = [
+/* Research work (not regular projects) – shown as cards in the Research section. Same fields as PROJECTS. */
+const RESEARCH_PROJECTS = [
   {
     repo: "Safe-Research",
     title: "Adaptive Multi-Layer Feature Fusion for Multitask Failure Detection in VLA Models",
@@ -17,7 +18,7 @@ const PROJECTS = [
     highlights: ["Multi-layer feature fusion detectors on OpenVLA", "Zero-shot failure detection on unseen LIBERO tasks"],
     tech: ["Python", "PyTorch", "OpenVLA", "LIBERO", "Slurm / Modal"],
     category: "Research · Robotics ML",
-    status: "In progress",
+    status: "Research Project",
     localReadme: `# SAFE Research: Failure Detection for Vision-Language-Action Models
 
 *Ongoing team research project.*
@@ -44,6 +45,9 @@ In progress. The rollout collection and feature-caching pipeline is built and te
 ## Stack
 Python · PyTorch · OpenVLA · LIBERO · Hydra · Weights & Biases · Slurm · Modal`,
   },
+];
+
+const PROJECTS = [
   {
     repo: "batchstream-inference-engine",
     title: "BatchStream Inference Engine",
